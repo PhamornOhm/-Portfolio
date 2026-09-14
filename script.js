@@ -13,7 +13,7 @@ const portfolioData = [
     fullDesc: 'เว็บไซต์แสดงผลงานส่วนตัวที่ออกแบบและพัฒนาด้วย HTML, CSS และ JavaScript ล้วน รองรับ responsive design สำหรับทุกขนาดหน้าจอ พร้อม dark mode theme ที่ดูทันสมัยและเป็นมืออาชีพ',
     tags: ['HTML', 'CSS', 'JavaScript'],
     thumbnail: 'assets/thumbs/portfolio-web.svg',
-    link: '#',
+    link: 'https://kamuibux-5a159.firebaseapp.com/',
     type: 'website'
   },
   {
