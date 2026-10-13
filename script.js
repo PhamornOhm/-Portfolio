@@ -186,10 +186,10 @@ const portfolioData = [
   {
     id: 10,
     category: 'ai',
-    title: 'Video Demo โปรเจค Automated TikTok Data Extraction and AI Analysis Service',
-    desc: 'Video Demo โปรเจค Automated TikTok Data Extraction and AI Analysis Service',
-    fullDesc: 'วิดิโอเดโม่ สาธิตการทำงานของโปรเจค กระบวนการทำงานของ Automation Workflow การเลือกข้อมูลในแต่ละ Node และอธิบายการทำงานในแต่ละส่วนจนจบกระบวนการทำงาน',
-    tags: ['โปรเจคจบ', 'Python', 'n8n', 'AI'],
+    title: 'Automated TikTok Data Extraction and AI Analysis Service (Video Demo)',
+    desc: 'สคริปต์ดึงข้อมูลคำอธิบายวิดีโอจาก TikTok API วิเคราะห์บริบทด้วย LLM และบันทึกผลลง Google Sheets อัตโนมัติ',
+    fullDesc: 'สคริปต์ดึงข้อมูลคำอธิบายวิดีโอจาก TikTok API และส่งต่อไปยัง LLM เพื่อวิเคราะห์ความหมายและบริบท พร้อมบันทึกผลลัพธ์ลง Google Sheets โดยอัตโนมัติ (วิดีโอเดโม่สาธิตกระบวนการทำงาน Automation Workflow การเลือกข้อมูลในแต่ละ Node และอธิบายการทำงานในแต่ละส่วนจนจบกระบวนการ)',
+    tags: ['Python', 'TikTok API', 'LLM', 'Automation', 'Google Sheets'],
     thumbnail: 'assets/thumbs/ai-chatbot.svg',
     videoUrl: 'https://www.youtube.com/embed/pshUpQ2c1KQ',
     type: 'ai'
@@ -197,10 +197,10 @@ const portfolioData = [
   {
     id: 11,
     category: 'ai',
-    title: 'Video นำเสนอโครงการ SuperAI Engineer ',
-    desc: 'วิดินำเสนอและเดโม่ SuperAI Engineer',
-    fullDesc: 'เป็นวิดิโอรอบนำเสนอ ทั้งจุดประสงค์และตัวโปรแกรม สำหรับลงประกวดรายการ SuperAI Engineer',
-    tags: ['Demo', 'YOLO', 'Python'],
+    title: 'Ripeness Detection of Mapid Fruit using YOLO (SuperAI Engineer Season 5)',
+    desc: 'ระบบ AI ตรวจจับและจำแนกระดับความสุกของผลมะปี๊ดด้วย YOLO ช่วยเกษตรกรคัดแยกผลผลิต',
+    fullDesc: 'พัฒนาระบบ AI เพื่อตรวจจับและจำแนกระดับความสุกของผลมะปี๊ดด้วยโมเดล YOLO ช่วยให้เกษตรกรคัดแยกผลผลิตได้อย่างมีประสิทธิภาพยิ่งขึ้น (วิดีโอนำเสนอจุดประสงค์และสาธิตการทำงานของโปรแกรม สำหรับการแข่งขันโครงการ SuperAI Engineer Season 5)',
+    tags: ['SuperAI', 'YOLO', 'Python', 'AI / Computer Vision'],
     thumbnail: 'assets/thumbs/ai-image.svg',
     videoUrl: 'https://www.youtube.com/embed/dYdTguOTX4E',
     type: 'ai'
@@ -209,10 +209,10 @@ const portfolioData = [
   {
     id: 15,
     category: 'ai',
-    title: 'AUC2 - ระบบร้านขายของชำออนไลน์',
-    desc: 'Demo ระบบร้านขายของชำออนไลน์ พัฒนาด้วย Google Apps Script',
-    fullDesc: 'ระบบร้านขายของชำออนไลน์ (Online Grocery System) พัฒนาด้วย Google Apps Script โดยใช้ Google Sheets เป็นฐานข้อมูล มีระบบสมัครสมาชิก, ล็อกอิน, แสดงสินค้า, ตะกร้าสินค้า, สั่งซื้อ, ชำระเงิน, ระบบ Admin จัดการสินค้าและคำสั่งซื้อ, แจ้งเตือนทาง Email และรายงานรายได้',
-    tags: ['Google Apps Script', 'Google Sheets', 'HTML', 'CSS', 'JavaScript'],
+    title: 'The 13th AUC2 2025 - Online Grocery System (ระบบร้านขายของชำออนไลน์)',
+    desc: 'ระบบร้านขายของชำออนไลน์ พัฒนาด้วย Google Apps Script โดยใช้ Google Sheets เป็นฐานข้อมูล',
+    fullDesc: 'ระบบร้านขายของชำออนไลน์ (Online Grocery System) พัฒนาด้วย Google Apps Script โดยใช้ Google Sheets เป็นฐานข้อมูล ได้รับการนำเสนอในงาน The 13th Asia Undergraduate Conference on Computing (AUC2 2025) ประกอบด้วยระบบสมัครสมาชิก, เข้าสู่ระบบ, แสดงและค้นหาสินค้า, ตะกร้าสินค้า, ระบบสั่งซื้อและชำระเงิน, ฝั่งผู้ดูแลระบบ (Admin) สำหรับจัดการสินค้าและคำสั่งซื้อ, ระบบแจ้งเตือนทางอีเมลอัตโนมัติ และสรุปรายงานยอดขาย',
+    tags: ['AUC2', 'Google Apps Script', 'Google Sheets', 'HTML', 'CSS', 'JavaScript'],
     thumbnail: 'assets/Aucc/3.หน้าสินค้าทั้งหมด.png',
     album: 'aucc',
     type: 'album'
@@ -279,7 +279,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderPortfolio();
   initPortfolioFilters();
   initModal();
-  initContactForm();
   initSmoothScroll();
   initGallery();
 });
@@ -542,34 +541,6 @@ function closeModal() {
 }
 
 // ==========================================
-// CONTACT FORM
-// ==========================================
-function initContactForm() {
-  const form = document.getElementById('contactForm');
-  if (!form) return;
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
-    const name = formData.get('name');
-
-    // Simple feedback animation
-    const btn = form.querySelector('button[type="submit"]');
-    const originalText = btn.innerHTML;
-    btn.innerHTML = `
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-      ส่งข้อความสำเร็จ! ขอบคุณครับ ${name}
-    `;
-    btn.style.background = 'linear-gradient(135deg, #34d399, #10b981)';
-
-    setTimeout(() => {
-      btn.innerHTML = originalText;
-      btn.style.background = '';
-      form.reset();
-    }, 3000);
-  });
-}
-
 // ==========================================
 // SMOOTH SCROLL
 // ==========================================
