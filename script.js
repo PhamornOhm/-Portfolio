@@ -110,12 +110,12 @@ const portfolioData = [
   {
     id: 13,
     category: 'video',
-    title: 'วิดีโอใหม่ - รอเพิ่มชื่อ',
-    desc: 'รอเพิ่มรายละเอียด',
-    fullDesc: 'รอเพิ่มรายละเอียด',
+    title: 'สอนทำ Form',
+    desc: 'วิดีสอนพื้นฐานการสร้าง Form สำหรับใช้งาน',
+    fullDesc: 'วิดีโอสอนพื้นฐานการสร้าง Form สำหรับผู้เริ่มต้น และนำไปประยุกต์ใช้งานตามต้องการ',
     tags: ['Davinci Resolve'],
     thumbnail: 'assets/thumbs/video-event.svg',
-    videoUrl: '',
+    videoUrl: 'https://www.youtube.com/embed/tP8gXalh9fc',
     type: 'video'
   },
 
@@ -205,17 +205,7 @@ const portfolioData = [
     videoUrl: 'https://www.youtube.com/embed/dYdTguOTX4E',
     type: 'ai'
   },
-  {
-    id: 12,
-    category: 'ai',
-    title: 'Demo Project 3',
-    desc: 'รอเพิ่มรายละเอียด',
-    fullDesc: 'รอเพิ่มรายละเอียด',
-    tags: ['Demo'],
-    thumbnail: 'assets/thumbs/ai-dashboard.svg',
-    videoUrl: '',
-    type: 'ai'
-  },
+
   {
     id: 15,
     category: 'ai',
@@ -375,10 +365,10 @@ function renderPortfolio() {
     const isVideo = !!item.videoUrl;
     const isAlbum = !!item.album;
     const categoryLabel = {
-      website: '🌐 Website',
-      video: '🎬 Video',
-      design: '🎨 Design',
-      ai: '🎬 Demo Project'
+      website: 'Website',
+      video: 'Video',
+      design: 'Design',
+      ai: 'Demo Project'
     };
 
     let mediaHtml;
@@ -413,7 +403,7 @@ function renderPortfolio() {
          </div>`;
     } else {
       mediaHtml = `<div class="portfolio-thumb">
-           <img src="${item.thumbnail}" alt="${item.title}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'thumb-placeholder\\'><span class=\\'thumb-icon\\'>${item.category === 'website' ? '🌐' : item.category === 'design' ? '🎨' : '🤖'}</span><span class=\\'thumb-label\\'>${item.title}</span></div>'">
+           <img src="${item.thumbnail}" alt="${item.title}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'thumb-placeholder\\'><span class=\\'thumb-label\\'>${item.title}</span></div>'">
            <div class="portfolio-overlay">
              <button class="btn btn-primary btn-sm" onclick="openModal(${item.id})">
                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
@@ -427,7 +417,7 @@ function renderPortfolio() {
 
     return `
       <div class="portfolio-item ${isAlbum ? 'portfolio-item--album' : ''} reveal" data-category="${item.category}" data-id="${item.id}">
-        <span class="portfolio-type-badge">${isAlbum ? '📸 Album' : categoryLabel[item.category]}</span>
+        <span class="portfolio-type-badge">${isAlbum ? 'Album' : categoryLabel[item.category]}</span>
         ${mediaHtml}
         <div class="portfolio-info" ${onClickInfo}>
           <h3>${item.title}</h3>
